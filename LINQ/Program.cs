@@ -8,7 +8,7 @@
 
             var myList = new List<string>() { "Halo", "Grand Theft Auto", "Call of Duty", "Gran Turismo", "Fortnite", "Ghost of Tsushima" };
 
-            var sorted = myList.OrderBy(x => x.Length);
+            var sorted = myList.OrderBy(myList => myList);
 
             foreach (var x in sorted)
             {
