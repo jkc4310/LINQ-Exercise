@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           
+
+            var myList = new List<string>() { "Halo", "Grand Theft Auto", "Call of Duty", "Gran Turismo", "Fortnite", "Ghost of Tsushima" };
+
+            var sorted = myList.OrderBy(x => x.Length);
+
+            foreach (var x in sorted)
+            {
+                Console.WriteLine(x);
+            }
         }
+
     }
 }
